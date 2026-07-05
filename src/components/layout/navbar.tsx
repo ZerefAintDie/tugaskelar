@@ -41,10 +41,8 @@ export function Navbar() {
       <div className="px-6 py-3">
         <div className="flex items-center justify-between h-12">
           {/* Logo / Brand */}
-          <div className="shrink-0">
-            <Link href="/" className="font-heading font-bold text-xl tracking-tight text-foreground">
-              tugas<span className="text-primary">kelar</span><span className="text-sm text-muted-foreground">.io</span>
-            </Link>
+          <div className="mb-8">
+            <img src="/fontlogo.svg" alt="TugasKelar.io Logo" className="h-25 w-25 pt-7 cursor-pointer" />
           </div>
 
           {/* Desktop Navigation */}

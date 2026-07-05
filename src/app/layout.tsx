@@ -14,8 +14,11 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Academic Assistant | Platform Pendamping Akademik",
+  title: "TugasKelar.io - Kami Kelarin Tugasmu!",
   description: "Bantuan tugas, makalah, coding, dan skripsi profesional, cepat, dan aman.",
+  icons: {
+    icon: "/icons.svg",
+  },
 };
 
 export default function RootLayout({

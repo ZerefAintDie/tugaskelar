@@ -443,7 +443,7 @@ function LandingPage({ onOrder }: LandingPageProps) {
       <footer className="bg-foreground text-background py-12">
         <div className="max-w-5xl mx-auto px-6">
           <p className="text-center" style={{ fontSize: "0.875rem" }}>
-            &copy; {new Date().getFullYear()} Academic Assistant. All rights reserved.
+            &copy; {new Date().getFullYear()} TugasKelar.io. All rights reserved.
           </p>
         </div>
       </footer>

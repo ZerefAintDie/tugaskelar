@@ -93,50 +93,7 @@
     --radius: 1rem;
   }
 
-  .dark {
-    /* Background */
-    --background: 208 32% 18%;
-    --foreground: 0 0% 98%;
-
-    /* Cards */
-    --card: 208 32% 22%;
-    --card-foreground: 0 0% 98%;
-
-    /* Popovers */
-    --popover: 208 32% 18%;
-    --popover-foreground: 0 0% 98%;
-
-    /* Brand */
-    --primary: 12 93% 58%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 167 41% 46%;
-    --secondary-foreground: 0 0% 100%;
-
-    /* Gold */
-    --gold: 45 95% 68%;
-
-    --accent: 208 32% 28%;
-    --accent-foreground: 0 0% 98%;
-
-    /* Muted */
-    /* --muted: 208 32% 24%; */
-    --muted: #D9D9D9;
-    --muted-foreground: 210 10% 78%;
-
-    /* Semantic */
-    --success: 96 37% 62%;
-    --warning: 29 94% 55%;
-
-    --destructive: 2 90% 60%;
-    --destructive-foreground: 0 0% 98%;
-
-    /* Inputs */
-    --border: 208 32% 28%;
-    --input: 208 32% 28%;
-
-    --ring: 12 93% 58%;
-  }
+  
 }
 
 @layer base {
