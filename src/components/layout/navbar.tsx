@@ -10,6 +10,8 @@ import {
   SheetContent,
   SheetTrigger,
   SheetTitle,
+  SheetHeader,
+  SheetFooter,
 } from "../ui/sheet";
 
 const navLinks = [
@@ -87,25 +89,46 @@ export function Navbar() {
                   <span className="sr-only">Buka menu utama</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <nav className="flex flex-col space-y-4 mt-15 px-4">
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.name}
-                      href={link.href}
-                      className="block px-2 py-1 text-lg p-4 font-medium text-foreground hover:text-primary/80 transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  ))}
-                  <div className="pt-6 mt-6 border-t border-border flex flex-col space-y-3">
+              <SheetContent side="right" className="w-full sm:max-w-sm p-0">
+                <div className="flex h-full flex-col bg-popover p-6">
+                  <SheetHeader className="items-start gap-1 px-0 pb-4 border-b border-border">
+                    <img
+                      src="/fontlogo.svg"
+                      alt="TugasKelar.io Logo"
+                      className="h-15 w-30 rounded-2xl object-contain"
+                    />
+                    <div>
+                      <SheetTitle className="text-lg font-semibold">
+                        Menu Utama
+                      </SheetTitle>
+                      <p className="mt-1 text-sm text-muted-foreground max-w-xs">
+                        Kami Kelarin Tugasmu! Dapatkan bantuan profesional untuk tugas, makalah, coding, dan skripsi dengan cepat dan aman.
+                      </p>
+                    </div>
+                  </SheetHeader>
+
+                  <div className="flex-1 overflow-y-auto">
+                    <nav className="flex flex-col gap-1">
+                      {navLinks.map((link) => (
+                        <Link
+                          key={link.name}
+                          href={link.href}
+                          className="rounded-2xl py-3 text-base font-medium text-foreground hover:bg-secondary/70 hover:text-primary transition-colors"
+                        >
+                          {link.name}
+                        </Link>
+                      ))}
+                    </nav>
+                  </div>
+
+                  <SheetFooter className="mt-6 px-0 pt-4 border-t border-border">
                     <Link href="/order" className="w-full">
                       <Button className="w-full justify-center bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
                         Buat Pesanan
                       </Button>
                     </Link>
-                  </div>
-                </nav>
+                  </SheetFooter>
+                </div>
               </SheetContent>
             </Sheet>
           </div>
