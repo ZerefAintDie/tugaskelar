@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "../ui/button";
-import { ThemeToggle } from "../shared/theme-toggle";
+// import { ThemeToggle } from "../shared/theme-toggle";
 import {
   Sheet,
   SheetContent,
@@ -75,11 +75,15 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="-mr-2">
-                  <Menu className="h-6 w-6" />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="-mr-2 h-10 w-10 rounded-full border border-border/70 bg-background/80 shadow-sm transition-colors hover:bg-accent/80"
+                >
+                  <Menu className="h-5 w-5" />
                   <span className="sr-only">Buka menu utama</span>
                 </Button>
               </SheetTrigger>
@@ -98,11 +102,6 @@ export function Navbar() {
                     </Link>
                   ))}
                   <div className="pt-6 mt-6 border-t border-border flex flex-col space-y-3">
-                    <Link href="/admin/login" className="w-full">
-                      <Button variant="outline" className="w-full justify-center">
-                        Login Admin
-                      </Button>
-                    </Link>
                     <Link href="/order" className="w-full">
                       <Button className="w-full justify-center bg-primary text-primary-foreground hover:bg-primary/90 font-semibold">
                         Buat Pesanan
