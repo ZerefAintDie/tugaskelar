@@ -88,15 +88,12 @@ export function Navbar() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                <SheetTitle className="text-left font-heading font-bold mb-6">
-                  Menu Navigasi
-                </SheetTitle>
-                <nav className="flex flex-col space-y-4">
+                <nav className="flex flex-col space-y-4 mt-15 px-4">
                   {navLinks.map((link) => (
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="block px-2 py-1 text-lg font-medium text-foreground hover:text-primary/80 transition-colors"
+                      className="block px-2 py-1 text-lg p-4 font-medium text-foreground hover:text-primary/80 transition-colors"
                     >
                       {link.name}
                     </Link>
