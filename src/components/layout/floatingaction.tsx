@@ -80,7 +80,7 @@ export function FloatingActions() {
         </AnimatePresence>
 
         <motion.a
-          href="https://wa.me/6281234567890?text=Hello!%20I'd%20like%20to%20know%20more%20about%20your%20academic%20assistance%20services."
+          href="https://wa.me/6285875015777?text=Hello!%20I'd%20like%20to%20know%20more%20about%20your%20tugas%20kelar%20services."
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.08 }}
